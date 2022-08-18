@@ -8,7 +8,7 @@ npm install
 ### Compiles and hot-reloads for development
 Запуск имитации API
 ```
-json-server public/list-products.json 
+json-server --watch public/api/list-products.json  --port 3001 
 ```
 Запуск проекта
 ```
