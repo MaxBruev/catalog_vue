@@ -1,0 +1,72 @@
+@import "src/ui/fonts/style.scss";
+@import "src/ui/color/style.scss";
+
+.ui-select {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 20px;
+  max-width: 335px;
+  width: 100%;
+
+  &__label {
+    font-family: $Font-Inter-Medium;
+    font-size: 18px;
+    line-height: 22px;
+    color: $color-text-1;
+  }
+
+  &__container {
+    position: relative;
+    height: 61px;
+
+    &_selected {
+      background-color: $color-bg-3;
+      font-family: $Font-Inter-Medium;
+      font-size: 18px;
+      line-height: 22px;
+      color: $color-text-1;
+      padding: 0 20px;
+      height: 61px;
+      width: 100%;
+      position: relative;
+      align-items: center;
+      display: grid;
+      grid-template-columns: 1fr max-content;
+      justify-items: flex-start;
+
+      .icon-block {
+        transition: all 0.3s;
+
+        &.rotate-arrow {
+          transform: rotate(180deg);
+        }
+      }
+    }
+
+    &_list {
+      position: absolute;
+      top: 64px;
+      display: grid;
+      grid-template-columns: 1fr;
+      width: 100%;
+      justify-items: flex-start;
+      border: 1px solid $color-text-1;
+      background-color: $color-bg-3;
+      transition: all 0.3s;
+
+      .item-select {
+        font-family: $Font-Inter-Medium;
+        font-size: 18px;
+        line-height: 22px;
+        color: $color-text-1;
+        width: 100%;
+        text-align: start;
+        padding: 5px 20px;
+
+        &:hover {
+          background-color: $color-text-2;
+        }
+      }
+    }
+  }
+}

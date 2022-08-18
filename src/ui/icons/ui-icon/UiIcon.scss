@@ -1,0 +1,14 @@
+:root {
+  --size-icon: 24px
+}
+
+.ui-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: var(--size-icon);
+
+  img {
+    width: var(--size-icon);
+  }
+}

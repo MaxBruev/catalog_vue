@@ -1,0 +1,119 @@
+@import "@/ui/fonts/style.scss";
+@import "@/ui/color/style.scss";
+
+.manu-block {
+  position: relative;
+  z-index: 999;
+  width: 455px;
+  height: 100%;
+  background-color: $color-bg-1;
+  margin-right: -30px;
+
+  &__content {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    grid-column-gap: 44px;
+    height: 100%;
+    justify-content: flex-end;
+    margin-right: 30px;
+  }
+
+  .basket-block {
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr;
+    top: 101px;
+    right: 0;
+    width: 455px;
+    transition: all 0.3s;
+    z-index: 900;
+    background-color: $color-bg-1;
+    max-width: 455px;
+
+    &__total {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-row-gap: 20px;
+      padding: 20px 100px 40px 41px;
+      max-width: 455px;
+
+      .ui-header {
+        margin-bottom: 10px;
+      }
+
+      .info-total {
+        display: grid;
+        grid-template-columns: max-content max-content;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+
+    &__order {
+      display: grid;
+      grid-template-columns: max-content max-content;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid #BDBDBD;
+      border-bottom: 1px solid #BDBDBD;
+      padding: 20px 100px 20px 41px;
+      max-width: 455px;
+    }
+
+    &__products {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      padding: 40px 100px 40px 41px;
+      max-width: 455px;
+
+      .empty-basket {
+        width: 100%;
+        text-align: center;
+      }
+
+      .products-item {
+        display: grid;
+        grid-template-columns: max-content max-content;
+        grid-column-gap: 10px;
+
+
+        &__img {
+          img {
+            width: 100px;
+            height: 100px;
+          }
+        }
+
+        &__info {
+          display: grid;
+          grid-template-columns: minmax(100px, 150px);
+          grid-template-rows: max-content max-content;
+          align-content: space-between;
+
+          &_text {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: max-content max-content;
+            grid-row-gap: 5px;
+          }
+        }
+      }
+    }
+
+    &__checkout {
+      max-width: 455px;
+
+      .ui-button-with-icon {
+        max-width: unset;
+        text-align: start;
+        padding-right: 100px;
+
+        .ui-icon {
+          width: 7px;
+          height: 14px;
+        }
+      }
+    }
+  }
+}

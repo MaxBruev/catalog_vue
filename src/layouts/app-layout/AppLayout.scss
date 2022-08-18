@@ -1,0 +1,27 @@
+@import "src/ui/fonts/style.scss";
+@import "src/ui/color/style.scss";
+
+.app-layout {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: max-content 1fr max-content;
+  grid-template-columns: 1fr;
+  align-items: flex-start;
+  width: 100%;
+  position: relative;
+
+  .app-container {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 100px;
+  }
+
+  .blur-window {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 990;
+  }
+}

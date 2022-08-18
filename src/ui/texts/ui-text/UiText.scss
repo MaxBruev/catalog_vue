@@ -1,0 +1,32 @@
+@import "src/ui/fonts/style.scss";
+@import "src/ui/color/style.scss";
+
+:root {
+  --color-text: $color-text-1;
+  --font-size-text: 16px;
+}
+
+.ui-text {
+  color: var(--color-text);
+  line-height: 19px;
+
+  &__bold {
+    font-family: $Font-Inter-Bold;
+    font-size: var(--font-size-text);
+  }
+
+  &__semi-bold {
+    font-family: $Font-Inter-SemiBold;
+    font-size: var(--font-size-text);
+  }
+
+  &__medium {
+    font-family: $Font-Inter-Medium;
+    font-size: var(--font-size-text);
+  }
+
+  &__regular {
+    font-family: $Font-Inter-Regular;
+    font-size: var(--font-size-text);
+  }
+}

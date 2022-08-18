@@ -1,0 +1,20 @@
+@import "src/ui/fonts/style.scss";
+@import "src/ui/color/style.scss";
+
+.ui-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 61px;
+  max-width: 335px;
+  width: 100%;
+  background-color: $color-bg-2;
+  padding: 0 20px;
+
+  &__content {
+    line-height: 22px;
+    font-size: 18px;
+    font-family: $Font-Inter-Medium;
+    color: $color-text-3;
+  }
+}

@@ -1,0 +1,9 @@
+@import "src/ui/fonts/style.scss";
+@import "src/ui/color/style.scss";
+
+.filters-component {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: flex-end;
+}

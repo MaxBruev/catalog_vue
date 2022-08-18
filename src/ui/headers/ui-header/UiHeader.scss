@@ -1,0 +1,23 @@
+@import "src/ui/fonts/style.scss";
+@import "src/ui/color/style.scss";
+
+:root {
+  --color-header: $color-text-1;
+  --font-size-header: 24px
+}
+
+.ui-header {
+  color: var(--color-header);
+
+  h1 {
+    font-family: $Font-Inter-Bold;
+    font-size: var(--font-size-header);
+    line-height: 48px;
+  }
+
+  h2 {
+    font-family: $Font-Inter-SemiBold;
+    font-size: var(--font-size-header);
+    line-height: 29px;
+  }
+}

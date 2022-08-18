@@ -1,0 +1,11 @@
+@import "src/ui/fonts/style.scss";
+@import "src/ui/color/style.scss";
+
+.ui-button-text {
+
+  &.decorate {
+    .ui-text {
+      text-decoration: underline;
+    }
+  }
+}

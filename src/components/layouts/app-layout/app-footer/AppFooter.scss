@@ -1,0 +1,23 @@
+@import "src/ui/fonts/style.scss";
+@import "src/ui/color/style.scss";
+
+.app-footer {
+  height: 100px;
+  background-color: $color-bg-2;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-content: center;
+
+  &__content {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    justify-content: space-between;
+    align-items: center;
+
+    .manu-block-footer {
+      display: grid;
+      grid-template-columns: max-content max-content;
+      grid-column-gap: 44px;
+    }
+  }
+}

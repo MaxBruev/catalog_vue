@@ -1,0 +1,56 @@
+{
+  "data": [
+    {
+      "imgUrl": "1",
+      "name": "Converse Kids 70",
+      "price": "49.99",
+      "category": "sneakers",
+      "id": 1
+    },
+    {
+      "imgUrl": "2",
+      "name": "Converse Chuck 70",
+      "price": "49.99",
+      "category": "sneakers",
+      "id": 2
+    },
+    {
+      "imgUrl": "3",
+      "name": "Converse Chuck 70 Renew High Top ",
+      "price": "50.99",
+      "sale": 40,
+      "category": "sneakers",
+      "id": 3
+    },
+    {
+      "imgUrl": "4",
+      "name": "Converse Pro Chuck 80",
+      "price": "64.99",
+      "sale": 35,
+      "category": "sneakers",
+      "id": 4
+    },
+    {
+      "imgUrl": "5",
+      "name": "Converse Winter Chuck 70",
+      "price": "79.99",
+      "sale": 20,
+      "category": "sneakers",
+      "id": 5
+    },
+    {
+      "imgUrl": "6",
+      "name": "Converse Winter Chuck 70 Full Black",
+      "price": "129.99",
+      "category": "sneakers",
+      "id": 6
+    },
+    {
+      "imgUrl": "7",
+      "name": "Converse Winter Chuck 70 Black/White",
+      "price": "99.99",
+      "category": "sneakers",
+      "id": 7
+    }
+  ]
+}
